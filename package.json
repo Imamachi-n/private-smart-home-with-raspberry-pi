@@ -1,0 +1,11 @@
+{
+  "name": "private-smart-home-with-raspberry-pi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Imamachi-n/private-smart-home-with-raspberry-pi.git",
+  "author": "imamachi-n <imamachigatugatu@hotmail.co.jp>",
+  "license": "MIT",
+  "dependencies": {
+    "i2c-bus": "^4.0.10"
+  }
+}
