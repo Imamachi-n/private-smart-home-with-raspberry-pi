@@ -1,10 +1,24 @@
 # private-smart-home-with-raspberry-pi
 
+## 使用上の注意点
+
 以下のライブラリのインポートは、Raspberry Pi 上でのみインポート可能。  
 MacOS 上ではエラーとなるため、デバック時は注意。
 
 ```javascript
 const i2c = require("i2c-bus");
+```
+
+## 環境設定
+
+```bash
+yarn install
+```
+
+`.env`ファイルを用意する。
+
+```
+SLACK_SIGNING_SECRET=xxxxxxxxxxx
 ```
 
 ## ブログ記事の草案から抜粋
