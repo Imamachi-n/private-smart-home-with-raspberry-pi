@@ -9,6 +9,10 @@ MacOS 上ではエラーとなるため、デバック時は注意。
 const i2c = require("i2c-bus");
 ```
 
+## Demo
+
+![demo](./img/demo.png)
+
 ## 環境設定
 
 ```bash
