@@ -9,6 +9,10 @@ MacOS 上ではエラーとなるため、デバック時は注意。
 const i2c = require("i2c-bus");
 ```
 
+## Architecture
+
+![arch](./img/raspberry-pi-smart-home.png)
+
 ## Demo
 
 ![demo](./img/demo.png)
