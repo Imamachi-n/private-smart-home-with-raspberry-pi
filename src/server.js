@@ -103,3 +103,37 @@ app.post("/stop", async (req, res) => {
   };
   res.json(message);
 });
+
+// 電気をつける
+app.post("/lighton", async (req, res) => {
+  // failed authentification
+  if (!signature.isVerified(req)) {
+    res.sendStatus(404); // You may throw 401 or 403, but why not just giving 404 to malicious attackers
+    return;
+  }
+
+  // send back an HTTP response with data
+  redCmd("./data/ch4.data");
+  const message = {
+    response_type: "in_channel",
+    text: "電気をつけました。"
+  };
+  res.json(message);
+});
+
+// 電気を消す
+app.post("/lightdown", async (req, res) => {
+  // failed authentification
+  if (!signature.isVerified(req)) {
+    res.sendStatus(404); // You may throw 401 or 403, but why not just giving 404 to malicious attackers
+    return;
+  }
+
+  // send back an HTTP response with data
+  redCmd("./data/ch5.data");
+  const message = {
+    response_type: "in_channel",
+    text: "電気を消しました。"
+  };
+  res.json(message);
+});
